@@ -131,3 +131,5 @@ C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddIsSuscribed
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddNameToMembershipType.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.UpdateNameToMembershipType.resources
