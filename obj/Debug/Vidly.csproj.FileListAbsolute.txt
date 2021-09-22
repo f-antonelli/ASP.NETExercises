@@ -125,3 +125,9 @@ C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.dll
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.pdb
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddIsSuscribedToCustomer.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
