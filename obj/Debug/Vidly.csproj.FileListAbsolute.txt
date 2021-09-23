@@ -135,3 +135,6 @@ C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddNameToMembe
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.UpdateNameToMembershipType.resources
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddCustomersBirthdate.resources
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.UpdateBirthdateToCustomer.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddGenre.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddMovieNewProperties.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.UpdateNamesToGenre.resources
