@@ -133,3 +133,5 @@ C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.PopulateMember
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddNameToMembershipType.resources
 C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.UpdateNameToMembershipType.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.AddCustomersBirthdate.resources
+C:\Users\Simon\Desktop\Exercises\Vidly\obj\Debug\Vidly.Migrations.UpdateBirthdateToCustomer.resources

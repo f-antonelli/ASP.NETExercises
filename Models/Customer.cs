@@ -15,7 +15,7 @@ namespace Vidly.Models
 			public bool IsSubcribedToNewsletter { get; set; }
 			public MembershipType MembershipType { get; set; }
 			public byte MembershipTypeId { get; set; }
-
+			public Nullable<DateTime> Birthdate { get; set; }
 
 	}	
 }
