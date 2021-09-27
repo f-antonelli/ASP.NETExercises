@@ -50,22 +50,31 @@ namespace Vidly.Controllers
         }
         public ActionResult Edit(int id)
         {
-            var movies = _context.Movies.SingleOrDefault(e => e.Id == id);
+            var movie = _context.Movies.SingleOrDefault(e => e.Id == id);
 
-            if (movies == null)
+            if (movie == null)
                 return HttpNotFound();
 
-            var viewModel = new MovieFormViewModel
+            var viewModel = new MovieFormViewModel(movie)
             {
-                Movie = movies,
                 Genres = _context.Genres.ToList()
             };
             return View("MovieForm", viewModel);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieFormViewModel(movie)
+                {
+                    Genres = _context.Genres.ToList()
+                };
+
+                return View("MovieForm", viewModel);
+            }
             if (movie.Id == 0)
             { 
                 movie.DateAdded = DateTime.Now; //Si no entra en conflico al crear una nueva pelicula
