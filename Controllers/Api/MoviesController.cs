@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -13,10 +14,10 @@ namespace Vidly.Controllers.Api
 {
 	public class MoviesController : ApiController
 	{
-		private readonly ApplicationDbContext _context;
+		private ApplicationDbContext _context;
 
-		private readonly MapperConfiguration config;
-		private readonly IMapper iMapper;
+		private MapperConfiguration config;
+		private IMapper iMapper;
 
 		public MoviesController()
 		{
@@ -29,7 +30,10 @@ namespace Vidly.Controllers.Api
 		//GET /api/movies
 		public IEnumerable<MovieDto> GetMovies()
 		{
-			return _context.Movies.ToList().Select(iMapper.Map<Movie, MovieDto>);
+			return _context.Movies
+				.Include(m => m.Genre)
+				.ToList()
+				.Select(iMapper.Map<Movie, MovieDto>);
 		}
 		// GET /api/movies/1
 		public IHttpActionResult GetMovies(int id)
@@ -79,12 +83,12 @@ namespace Vidly.Controllers.Api
 		[HttpDelete]
 		public IHttpActionResult DeleteMovie(int id)
 		{
-			var movieInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
+			var movieInDb = _context.Movies.SingleOrDefault(c => c.Id == id);
 
 			if (movieInDb == null)
 				throw new HttpResponseException(HttpStatusCode.NotFound);
 
-			_context.Customers.Remove(movieInDb);
+			_context.Movies.Remove(movieInDb);
 			_context.SaveChanges();
 
 			return Ok();
