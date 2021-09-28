@@ -12,8 +12,21 @@ namespace Vidly.App_Start
     {
         public MappingProfile()
         {
+            // Customer Mappings
+            // API -> Outbound
             CreateMap<Customer, CustomerDto>();
-            CreateMap<CustomerDto, Customer>();            
+
+            // API <- Inbound : Asi le digo al automapper que no mapee el id cuando es enviado
+            CreateMap<CustomerDto, Customer>()
+                .ForMember(c => c.Id, opt => opt.Ignore());
+
+            // Movie Mappings
+            // API -> Outbound
+            CreateMap<Movie, MovieDto>();
+
+            // API <- Inbound
+            CreateMap<MovieDto, Movie>()
+                .ForMember(c => c.Id, opt => opt.Ignore());
         }
     }
 }
